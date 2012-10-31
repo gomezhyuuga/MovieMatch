@@ -13,6 +13,7 @@
 		1803DFEA1640CE81007FA456 /* FXImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803DFE31640CE81007FA456 /* FXImageView.m */; };
 		1803DFEB1640CE81007FA456 /* UIImage+FX.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803DFE51640CE81007FA456 /* UIImage+FX.m */; };
 		1803DFEC1640CE81007FA456 /* ReflectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803DFE81640CE81007FA456 /* ReflectionView.m */; };
+		1803DFF31640E05F007FA456 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1803DFF21640E05F007FA456 /* QuartzCore.framework */; };
 		184544E1163E036A002A2325 /* MMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 184544E0163E036A002A2325 /* MMUtils.m */; };
 		184544E5163E05FB002A2325 /* MMDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184544E4163E05FB002A2325 /* MMDetailViewController.m */; };
 		184544E8163E0B4C002A2325 /* UIImage+ImageBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 184544E7163E0B4C002A2325 /* UIImage+ImageBlur.m */; };
@@ -43,6 +44,7 @@
 		1803DFE51640CE81007FA456 /* UIImage+FX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FX.m"; sourceTree = "<group>"; };
 		1803DFE71640CE81007FA456 /* ReflectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReflectionView.h; sourceTree = "<group>"; };
 		1803DFE81640CE81007FA456 /* ReflectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReflectionView.m; sourceTree = "<group>"; };
+		1803DFF21640E05F007FA456 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		184544DF163E036A002A2325 /* MMUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMUtils.h; sourceTree = "<group>"; };
 		184544E0163E036A002A2325 /* MMUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMUtils.m; sourceTree = "<group>"; };
 		184544E3163E05FB002A2325 /* MMDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDetailViewController.h; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1803DFF31640E05F007FA456 /* QuartzCore.framework in Frameworks */,
 				1853F3C8163B55B00012C00E /* UIKit.framework in Frameworks */,
 				1853F3CA163B55B00012C00E /* Foundation.framework in Frameworks */,
 				1853F3CC163B55B00012C00E /* CoreGraphics.framework in Frameworks */,
@@ -160,6 +163,7 @@
 		1853F3B8163B55B00012C00E = {
 			isa = PBXGroup;
 			children = (
+				1803DFF21640E05F007FA456 /* QuartzCore.framework */,
 				1803DFED1640CE86007FA456 /* Libs */,
 				1853F3ED163B6D690012C00E /* RottenTomatoesAPI */,
 				1853F3CD163B55B00012C00E /* MovieMatch */,
