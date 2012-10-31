@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1803DFD91640CD5E007FA456 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1803DFD81640CD5E007FA456 /* MainStoryboard.storyboard */; };
+		1803DFDD1640CE73007FA456 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803DFDC1640CE73007FA456 /* iCarousel.m */; };
+		1803DFE91640CE81007FA456 /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803DFE01640CE81007FA456 /* AsyncImageView.m */; };
+		1803DFEA1640CE81007FA456 /* FXImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803DFE31640CE81007FA456 /* FXImageView.m */; };
+		1803DFEB1640CE81007FA456 /* UIImage+FX.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803DFE51640CE81007FA456 /* UIImage+FX.m */; };
+		1803DFEC1640CE81007FA456 /* ReflectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803DFE81640CE81007FA456 /* ReflectionView.m */; };
 		184544E1163E036A002A2325 /* MMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 184544E0163E036A002A2325 /* MMUtils.m */; };
 		184544E5163E05FB002A2325 /* MMDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184544E4163E05FB002A2325 /* MMDetailViewController.m */; };
 		184544E8163E0B4C002A2325 /* UIImage+ImageBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 184544E7163E0B4C002A2325 /* UIImage+ImageBlur.m */; };
@@ -19,13 +25,24 @@
 		1853F3DA163B55B00012C00E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1853F3D9163B55B00012C00E /* Default.png */; };
 		1853F3DC163B55B00012C00E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1853F3DB163B55B00012C00E /* Default@2x.png */; };
 		1853F3DE163B55B00012C00E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1853F3DD163B55B00012C00E /* Default-568h@2x.png */; };
-		1853F3E1163B55B00012C00E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1853F3DF163B55B00012C00E /* MainStoryboard.storyboard */; };
-		1853F3E4163B55B00012C00E /* MMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853F3E3163B55B00012C00E /* MMViewController.m */; };
+		1853F3E1163B55B00012C00E /* MainStoryboardUsingTableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1853F3DF163B55B00012C00E /* MainStoryboardUsingTableView.storyboard */; };
+		1853F3E4163B55B00012C00E /* MMTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853F3E3163B55B00012C00E /* MMTableViewController.m */; };
 		1853F3EC163B56860012C00E /* RottenTomatoesAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853F3EB163B56860012C00E /* RottenTomatoesAPI.m */; };
 		1853F3F0163B6D880012C00E /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853F3EF163B6D880012C00E /* Movie.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1803DFD81640CD5E007FA456 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		1803DFDB1640CE73007FA456 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		1803DFDC1640CE73007FA456 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		1803DFDF1640CE81007FA456 /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
+		1803DFE01640CE81007FA456 /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageView.m; sourceTree = "<group>"; };
+		1803DFE21640CE81007FA456 /* FXImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXImageView.h; sourceTree = "<group>"; };
+		1803DFE31640CE81007FA456 /* FXImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXImageView.m; sourceTree = "<group>"; };
+		1803DFE41640CE81007FA456 /* UIImage+FX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FX.h"; sourceTree = "<group>"; };
+		1803DFE51640CE81007FA456 /* UIImage+FX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FX.m"; sourceTree = "<group>"; };
+		1803DFE71640CE81007FA456 /* ReflectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReflectionView.h; sourceTree = "<group>"; };
+		1803DFE81640CE81007FA456 /* ReflectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReflectionView.m; sourceTree = "<group>"; };
 		184544DF163E036A002A2325 /* MMUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMUtils.h; sourceTree = "<group>"; };
 		184544E0163E036A002A2325 /* MMUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMUtils.m; sourceTree = "<group>"; };
 		184544E3163E05FB002A2325 /* MMDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDetailViewController.h; sourceTree = "<group>"; };
@@ -45,9 +62,9 @@
 		1853F3D9163B55B00012C00E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		1853F3DB163B55B00012C00E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		1853F3DD163B55B00012C00E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		1853F3E0163B55B00012C00E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		1853F3E2163B55B00012C00E /* MMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMViewController.h; sourceTree = "<group>"; };
-		1853F3E3163B55B00012C00E /* MMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMViewController.m; sourceTree = "<group>"; };
+		1853F3E0163B55B00012C00E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboardUsingTableView.storyboard; sourceTree = "<group>"; };
+		1853F3E2163B55B00012C00E /* MMTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMTableViewController.h; sourceTree = "<group>"; };
+		1853F3E3163B55B00012C00E /* MMTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMTableViewController.m; sourceTree = "<group>"; };
 		1853F3EA163B56860012C00E /* RottenTomatoesAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RottenTomatoesAPI.h; sourceTree = "<group>"; };
 		1853F3EB163B56860012C00E /* RottenTomatoesAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RottenTomatoesAPI.m; sourceTree = "<group>"; };
 		1853F3EE163B6D880012C00E /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
@@ -68,9 +85,83 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1803DFD61640CBFB007FA456 /* TestUsingTableView */ = {
+			isa = PBXGroup;
+			children = (
+				1853F3E2163B55B00012C00E /* MMTableViewController.h */,
+				1853F3E3163B55B00012C00E /* MMTableViewController.m */,
+				1853F3DF163B55B00012C00E /* MainStoryboardUsingTableView.storyboard */,
+				184544E3163E05FB002A2325 /* MMDetailViewController.h */,
+				184544E4163E05FB002A2325 /* MMDetailViewController.m */,
+			);
+			name = TestUsingTableView;
+			sourceTree = "<group>";
+		};
+		1803DFD71640CC86007FA456 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				184544E6163E0B4C002A2325 /* UIImage+ImageBlur.h */,
+				184544E7163E0B4C002A2325 /* UIImage+ImageBlur.m */,
+				184544DF163E036A002A2325 /* MMUtils.h */,
+				184544E0163E036A002A2325 /* MMUtils.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		1803DFDA1640CE73007FA456 /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				1803DFDB1640CE73007FA456 /* iCarousel.h */,
+				1803DFDC1640CE73007FA456 /* iCarousel.m */,
+			);
+			path = iCarousel;
+			sourceTree = "<group>";
+		};
+		1803DFDE1640CE81007FA456 /* AsyncImageView */ = {
+			isa = PBXGroup;
+			children = (
+				1803DFDF1640CE81007FA456 /* AsyncImageView.h */,
+				1803DFE01640CE81007FA456 /* AsyncImageView.m */,
+			);
+			path = AsyncImageView;
+			sourceTree = "<group>";
+		};
+		1803DFE11640CE81007FA456 /* FXImageView */ = {
+			isa = PBXGroup;
+			children = (
+				1803DFE21640CE81007FA456 /* FXImageView.h */,
+				1803DFE31640CE81007FA456 /* FXImageView.m */,
+				1803DFE41640CE81007FA456 /* UIImage+FX.h */,
+				1803DFE51640CE81007FA456 /* UIImage+FX.m */,
+			);
+			path = FXImageView;
+			sourceTree = "<group>";
+		};
+		1803DFE61640CE81007FA456 /* ReflectionView */ = {
+			isa = PBXGroup;
+			children = (
+				1803DFE71640CE81007FA456 /* ReflectionView.h */,
+				1803DFE81640CE81007FA456 /* ReflectionView.m */,
+			);
+			path = ReflectionView;
+			sourceTree = "<group>";
+		};
+		1803DFED1640CE86007FA456 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				1803DFDE1640CE81007FA456 /* AsyncImageView */,
+				1803DFE11640CE81007FA456 /* FXImageView */,
+				1803DFE61640CE81007FA456 /* ReflectionView */,
+				1803DFDA1640CE73007FA456 /* iCarousel */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
 		1853F3B8163B55B00012C00E = {
 			isa = PBXGroup;
 			children = (
+				1803DFED1640CE86007FA456 /* Libs */,
+				1853F3ED163B6D690012C00E /* RottenTomatoesAPI */,
 				1853F3CD163B55B00012C00E /* MovieMatch */,
 				1853F3C6163B55B00012C00E /* Frameworks */,
 				1853F3C4163B55B00012C00E /* Products */,
@@ -98,19 +189,12 @@
 		1853F3CD163B55B00012C00E /* MovieMatch */ = {
 			isa = PBXGroup;
 			children = (
-				1853F3ED163B6D690012C00E /* RottenTomatoesAPI */,
+				1803DFD61640CBFB007FA456 /* TestUsingTableView */,
+				1803DFD71640CC86007FA456 /* Utils */,
 				1853F3D6163B55B00012C00E /* MMAppDelegate.h */,
 				1853F3D7163B55B00012C00E /* MMAppDelegate.m */,
-				1853F3DF163B55B00012C00E /* MainStoryboard.storyboard */,
-				184544E3163E05FB002A2325 /* MMDetailViewController.h */,
-				184544E4163E05FB002A2325 /* MMDetailViewController.m */,
-				184544E6163E0B4C002A2325 /* UIImage+ImageBlur.h */,
-				184544E7163E0B4C002A2325 /* UIImage+ImageBlur.m */,
-				1853F3E2163B55B00012C00E /* MMViewController.h */,
-				1853F3E3163B55B00012C00E /* MMViewController.m */,
 				1853F3CE163B55B00012C00E /* Supporting Files */,
-				184544DF163E036A002A2325 /* MMUtils.h */,
-				184544E0163E036A002A2325 /* MMUtils.m */,
+				1803DFD81640CD5E007FA456 /* MainStoryboard.storyboard */,
 			);
 			path = MovieMatch;
 			sourceTree = "<group>";
@@ -138,6 +222,7 @@
 				1853F3EF163B6D880012C00E /* Movie.m */,
 			);
 			name = RottenTomatoesAPI;
+			path = MovieMatch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,7 +281,8 @@
 				1853F3DA163B55B00012C00E /* Default.png in Resources */,
 				1853F3DC163B55B00012C00E /* Default@2x.png in Resources */,
 				1853F3DE163B55B00012C00E /* Default-568h@2x.png in Resources */,
-				1853F3E1163B55B00012C00E /* MainStoryboard.storyboard in Resources */,
+				1853F3E1163B55B00012C00E /* MainStoryboardUsingTableView.storyboard in Resources */,
+				1803DFD91640CD5E007FA456 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,12 +295,17 @@
 			files = (
 				1853F3D4163B55B00012C00E /* main.m in Sources */,
 				1853F3D8163B55B00012C00E /* MMAppDelegate.m in Sources */,
-				1853F3E4163B55B00012C00E /* MMViewController.m in Sources */,
+				1853F3E4163B55B00012C00E /* MMTableViewController.m in Sources */,
 				1853F3EC163B56860012C00E /* RottenTomatoesAPI.m in Sources */,
 				1853F3F0163B6D880012C00E /* Movie.m in Sources */,
 				184544E1163E036A002A2325 /* MMUtils.m in Sources */,
 				184544E5163E05FB002A2325 /* MMDetailViewController.m in Sources */,
 				184544E8163E0B4C002A2325 /* UIImage+ImageBlur.m in Sources */,
+				1803DFDD1640CE73007FA456 /* iCarousel.m in Sources */,
+				1803DFE91640CE81007FA456 /* AsyncImageView.m in Sources */,
+				1803DFEA1640CE81007FA456 /* FXImageView.m in Sources */,
+				1803DFEB1640CE81007FA456 /* UIImage+FX.m in Sources */,
+				1803DFEC1640CE81007FA456 /* ReflectionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,12 +320,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		1853F3DF163B55B00012C00E /* MainStoryboard.storyboard */ = {
+		1853F3DF163B55B00012C00E /* MainStoryboardUsingTableView.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				1853F3E0163B55B00012C00E /* en */,
 			);
-			name = MainStoryboard.storyboard;
+			name = MainStoryboardUsingTableView.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 hbit. All rights reserved.
 //
 
-#import "MMViewController.h"
+#import "MMTableViewController.h"
 #import "RottenTomatoesAPI.h"
 #import "Movie.h"
 #import "MMUtils.h"
@@ -22,7 +22,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-//    RottenTomatoesAPI *o = [[RottenTomatoesAPI alloc] init];
     NSArray* movies = [RottenTomatoesAPI getMoviesInTheaters];
     tableData = movies;
 }

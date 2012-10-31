@@ -33,7 +33,7 @@
     _movieTitle.text = _detailedMovie.title;
     NSData* imageData = [MMUtils getDataFromURL:_detailedMovie.detailedPoster];
     _bgImage.image = [UIImage imageWithData:imageData];
-    _bgImage.image = [_bgImage.image imageWithGaussianBlur];
+    _bgImage.image = [[_bgImage.image imageWithGaussianBlur] imageWithGaussianBlur];
 }
 
 -(void)setDetailedMovie:(Movie *)detailedMovie
