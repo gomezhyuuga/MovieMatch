@@ -12,7 +12,7 @@
 #import "MMUtils.h"
 #import "MMDetailViewController.h"
 
-@implementation MMViewController
+@implementation MMTableViewController
 {
     NSArray *tableData;
 }

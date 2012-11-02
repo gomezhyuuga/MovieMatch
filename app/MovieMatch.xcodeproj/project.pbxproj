@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1803DFD91640CD5E007FA456 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1803DFD81640CD5E007FA456 /* MainStoryboard.storyboard */; };
 		1803DFDD1640CE73007FA456 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803DFDC1640CE73007FA456 /* iCarousel.m */; };
 		1803DFE91640CE81007FA456 /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803DFE01640CE81007FA456 /* AsyncImageView.m */; };
 		1803DFEA1640CE81007FA456 /* FXImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803DFE31640CE81007FA456 /* FXImageView.m */; };
 		1803DFEB1640CE81007FA456 /* UIImage+FX.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803DFE51640CE81007FA456 /* UIImage+FX.m */; };
 		1803DFEC1640CE81007FA456 /* ReflectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803DFE81640CE81007FA456 /* ReflectionView.m */; };
 		1803DFF31640E05F007FA456 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1803DFF21640E05F007FA456 /* QuartzCore.framework */; };
+		1841946416435C0B008A6D35 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1841946316435C0B008A6D35 /* background.jpg */; };
+		1841946B16435F46008A6D35 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1841946A16435F46008A6D35 /* MainStoryboard.storyboard */; };
+		1841947216436475008A6D35 /* MMUIToolbarMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841947116436475008A6D35 /* MMUIToolbarMovie.m */; };
 		184544E1163E036A002A2325 /* MMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 184544E0163E036A002A2325 /* MMUtils.m */; };
 		184544E5163E05FB002A2325 /* MMDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184544E4163E05FB002A2325 /* MMDetailViewController.m */; };
 		184544E8163E0B4C002A2325 /* UIImage+ImageBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 184544E7163E0B4C002A2325 /* UIImage+ImageBlur.m */; };
@@ -30,10 +32,12 @@
 		1853F3E4163B55B00012C00E /* MMTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853F3E3163B55B00012C00E /* MMTableViewController.m */; };
 		1853F3EC163B56860012C00E /* RottenTomatoesAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853F3EB163B56860012C00E /* RottenTomatoesAPI.m */; };
 		1853F3F0163B6D880012C00E /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 1853F3EF163B6D880012C00E /* Movie.m */; };
+		18C6AAD316421F2D0077F70D /* MMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C6AAD216421F2D0077F70D /* MMViewController.m */; };
+		18C6AADA164225EF0077F70D /* Images.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18C6AAD8164225EF0077F70D /* Images.plist */; };
+		18C6AADB164225EF0077F70D /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C6AAD9164225EF0077F70D /* placeholder.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1803DFD81640CD5E007FA456 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		1803DFDB1640CE73007FA456 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		1803DFDC1640CE73007FA456 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		1803DFDF1640CE81007FA456 /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
@@ -45,6 +49,10 @@
 		1803DFE71640CE81007FA456 /* ReflectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReflectionView.h; sourceTree = "<group>"; };
 		1803DFE81640CE81007FA456 /* ReflectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReflectionView.m; sourceTree = "<group>"; };
 		1803DFF21640E05F007FA456 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1841946316435C0B008A6D35 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = ../background.jpg; sourceTree = "<group>"; };
+		1841946A16435F46008A6D35 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = ../MainStoryboard.storyboard; sourceTree = "<group>"; };
+		1841947016436475008A6D35 /* MMUIToolbarMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMUIToolbarMovie.h; sourceTree = "<group>"; };
+		1841947116436475008A6D35 /* MMUIToolbarMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMUIToolbarMovie.m; sourceTree = "<group>"; };
 		184544DF163E036A002A2325 /* MMUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMUtils.h; sourceTree = "<group>"; };
 		184544E0163E036A002A2325 /* MMUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMUtils.m; sourceTree = "<group>"; };
 		184544E3163E05FB002A2325 /* MMDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDetailViewController.h; sourceTree = "<group>"; };
@@ -71,6 +79,10 @@
 		1853F3EB163B56860012C00E /* RottenTomatoesAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RottenTomatoesAPI.m; sourceTree = "<group>"; };
 		1853F3EE163B6D880012C00E /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
 		1853F3EF163B6D880012C00E /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
+		18C6AAD116421F2D0077F70D /* MMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMViewController.h; sourceTree = "<group>"; };
+		18C6AAD216421F2D0077F70D /* MMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMViewController.m; sourceTree = "<group>"; };
+		18C6AAD8164225EF0077F70D /* Images.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Images.plist; sourceTree = "<group>"; };
+		18C6AAD9164225EF0077F70D /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,10 +172,26 @@
 			name = Libs;
 			sourceTree = "<group>";
 		};
+		1841946516435C13008A6D35 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1841946316435C0B008A6D35 /* background.jpg */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1841946F164363F2008A6D35 /* MovieInfo */ = {
+			isa = PBXGroup;
+			children = (
+				1841947016436475008A6D35 /* MMUIToolbarMovie.h */,
+				1841947116436475008A6D35 /* MMUIToolbarMovie.m */,
+			);
+			name = MovieInfo;
+			sourceTree = "<group>";
+		};
 		1853F3B8163B55B00012C00E = {
 			isa = PBXGroup;
 			children = (
-				1803DFF21640E05F007FA456 /* QuartzCore.framework */,
 				1803DFED1640CE86007FA456 /* Libs */,
 				1853F3ED163B6D690012C00E /* RottenTomatoesAPI */,
 				1853F3CD163B55B00012C00E /* MovieMatch */,
@@ -183,6 +211,7 @@
 		1853F3C6163B55B00012C00E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1803DFF21640E05F007FA456 /* QuartzCore.framework */,
 				1853F3C7163B55B00012C00E /* UIKit.framework */,
 				1853F3C9163B55B00012C00E /* Foundation.framework */,
 				1853F3CB163B55B00012C00E /* CoreGraphics.framework */,
@@ -193,12 +222,16 @@
 		1853F3CD163B55B00012C00E /* MovieMatch */ = {
 			isa = PBXGroup;
 			children = (
+				1841946516435C13008A6D35 /* Resources */,
 				1803DFD61640CBFB007FA456 /* TestUsingTableView */,
+				1853F3CE163B55B00012C00E /* Supporting Files */,
 				1803DFD71640CC86007FA456 /* Utils */,
 				1853F3D6163B55B00012C00E /* MMAppDelegate.h */,
 				1853F3D7163B55B00012C00E /* MMAppDelegate.m */,
-				1853F3CE163B55B00012C00E /* Supporting Files */,
-				1803DFD81640CD5E007FA456 /* MainStoryboard.storyboard */,
+				18C6AAD116421F2D0077F70D /* MMViewController.h */,
+				18C6AAD216421F2D0077F70D /* MMViewController.m */,
+				1841946A16435F46008A6D35 /* MainStoryboard.storyboard */,
+				1841946F164363F2008A6D35 /* MovieInfo */,
 			);
 			path = MovieMatch;
 			sourceTree = "<group>";
@@ -206,6 +239,8 @@
 		1853F3CE163B55B00012C00E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				18C6AAD8164225EF0077F70D /* Images.plist */,
+				18C6AAD9164225EF0077F70D /* placeholder.png */,
 				1853F3CF163B55B00012C00E /* MovieMatch-Info.plist */,
 				1853F3D0163B55B00012C00E /* InfoPlist.strings */,
 				1853F3D3163B55B00012C00E /* main.m */,
@@ -286,7 +321,10 @@
 				1853F3DC163B55B00012C00E /* Default@2x.png in Resources */,
 				1853F3DE163B55B00012C00E /* Default-568h@2x.png in Resources */,
 				1853F3E1163B55B00012C00E /* MainStoryboardUsingTableView.storyboard in Resources */,
-				1803DFD91640CD5E007FA456 /* MainStoryboard.storyboard in Resources */,
+				18C6AADA164225EF0077F70D /* Images.plist in Resources */,
+				18C6AADB164225EF0077F70D /* placeholder.png in Resources */,
+				1841946416435C0B008A6D35 /* background.jpg in Resources */,
+				1841946B16435F46008A6D35 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +348,8 @@
 				1803DFEA1640CE81007FA456 /* FXImageView.m in Sources */,
 				1803DFEB1640CE81007FA456 /* UIImage+FX.m in Sources */,
 				1803DFEC1640CE81007FA456 /* ReflectionView.m in Sources */,
+				18C6AAD316421F2D0077F70D /* MMViewController.m in Sources */,
+				1841947216436475008A6D35 /* MMUIToolbarMovie.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

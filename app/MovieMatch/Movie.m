@@ -20,6 +20,8 @@
 @synthesize detailedPoster = _detailedPoster, originalPoster = _originalPoster, thumbnailPoster = _thumbnailPoster;
 @synthesize mpaa_rating = _mpaa_rating;
 @synthesize runtime = _runtime;
+@synthesize audienceScore = _audienceScore;
+@synthesize audienceRating = _audienceRating;
 //- (id) init
 //{
 //    self = [super init];
@@ -40,7 +42,6 @@
         [movies addObject:movie];
     }
     return movies;
-//    return [movies copy];
 }
 
 + (Movie *)initFromDictionary:(NSDictionary *) dictionary
@@ -60,6 +61,10 @@
         movie.thumbnailPoster = [NSURL URLWithString: [posters objectForKey:@"thumbnail"]];
         movie.detailedPoster = [NSURL URLWithString: [posters objectForKey:@"detailed"]];
         movie.originalPoster = [NSURL URLWithString: [posters objectForKey:@"original"]];
+        // Ratings
+        NSDictionary *ratings = [dictionary objectForKey:@"ratings"];
+        movie.audienceScore = [[ratings objectForKey:@"audience_score"] integerValue];
+        movie.audienceRating = [ratings objectForKey:@"audience_rating"];
     }
     return movie;
 }

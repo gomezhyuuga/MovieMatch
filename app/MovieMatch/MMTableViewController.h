@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MMViewController : UITableViewController
+@interface MMTableViewController : UITableViewController
 @property (nonatomic) IBOutlet UILabel* movieTitle;
 @property (nonatomic) IBOutlet UIImage* poster;
 @end

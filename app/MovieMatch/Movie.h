@@ -18,6 +18,8 @@
 @property (nonatomic) NSURL* thumbnailPoster;
 @property (nonatomic) NSURL* detailedPoster;
 @property (nonatomic) NSURL* originalPoster;
+@property (nonatomic) int audienceScore;
+@property (nonatomic) NSString *audienceRating;
 
 + (NSArray *) listOfMovies:(NSArray *) arrayOfMovies;
 @end

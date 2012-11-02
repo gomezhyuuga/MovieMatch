@@ -10,4 +10,5 @@
 
 @interface RottenTomatoesAPI : NSObject
 + (NSArray *)getMoviesInTheaters;
++ (NSArray *)getMoviesInTheatersWithLimit:(int)limit;
 @end
