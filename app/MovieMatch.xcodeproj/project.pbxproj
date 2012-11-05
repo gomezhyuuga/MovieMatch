@@ -15,7 +15,6 @@
 		1803DFF31640E05F007FA456 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1803DFF21640E05F007FA456 /* QuartzCore.framework */; };
 		1841946416435C0B008A6D35 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1841946316435C0B008A6D35 /* background.jpg */; };
 		1841946B16435F46008A6D35 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1841946A16435F46008A6D35 /* MainStoryboard.storyboard */; };
-		1841947216436475008A6D35 /* MMUIToolbarMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841947116436475008A6D35 /* MMUIToolbarMovie.m */; };
 		184544E1163E036A002A2325 /* MMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 184544E0163E036A002A2325 /* MMUtils.m */; };
 		184544E5163E05FB002A2325 /* MMDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184544E4163E05FB002A2325 /* MMDetailViewController.m */; };
 		184544E8163E0B4C002A2325 /* UIImage+ImageBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 184544E7163E0B4C002A2325 /* UIImage+ImageBlur.m */; };
@@ -35,6 +34,14 @@
 		18C6AAD316421F2D0077F70D /* MMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C6AAD216421F2D0077F70D /* MMViewController.m */; };
 		18C6AADA164225EF0077F70D /* Images.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18C6AAD8164225EF0077F70D /* Images.plist */; };
 		18C6AADB164225EF0077F70D /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C6AAD9164225EF0077F70D /* placeholder.png */; };
+		18F1ED66164686390049F7F4 /* progress_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F1ED63164686390049F7F4 /* progress_bg.png */; };
+		18F1ED67164686390049F7F4 /* progress_track.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F1ED64164686390049F7F4 /* progress_track.png */; };
+		18F1ED68164686390049F7F4 /* toolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F1ED65164686390049F7F4 /* toolbar.png */; };
+		18F1ED6A164690D10049F7F4 /* drag_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F1ED69164690D10049F7F4 /* drag_icon.png */; };
+		18F1ED6D164698FA0049F7F4 /* MMDetailedMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F1ED6C164698FA0049F7F4 /* MMDetailedMovieViewController.m */; };
+		18F1ED721646ABE20049F7F4 /* background_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F1ED711646ABE20049F7F4 /* background_image.png */; };
+		18F1ED741646AD210049F7F4 /* app_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F1ED731646AD210049F7F4 /* app_icon.png */; };
+		18F1ED761646AD990049F7F4 /* app_icon_legacy.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F1ED751646AD990049F7F4 /* app_icon_legacy.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,8 +58,6 @@
 		1803DFF21640E05F007FA456 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		1841946316435C0B008A6D35 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = ../background.jpg; sourceTree = "<group>"; };
 		1841946A16435F46008A6D35 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = ../MainStoryboard.storyboard; sourceTree = "<group>"; };
-		1841947016436475008A6D35 /* MMUIToolbarMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMUIToolbarMovie.h; sourceTree = "<group>"; };
-		1841947116436475008A6D35 /* MMUIToolbarMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMUIToolbarMovie.m; sourceTree = "<group>"; };
 		184544DF163E036A002A2325 /* MMUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMUtils.h; sourceTree = "<group>"; };
 		184544E0163E036A002A2325 /* MMUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMUtils.m; sourceTree = "<group>"; };
 		184544E3163E05FB002A2325 /* MMDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDetailViewController.h; sourceTree = "<group>"; };
@@ -83,6 +88,15 @@
 		18C6AAD216421F2D0077F70D /* MMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMViewController.m; sourceTree = "<group>"; };
 		18C6AAD8164225EF0077F70D /* Images.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Images.plist; sourceTree = "<group>"; };
 		18C6AAD9164225EF0077F70D /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		18F1ED63164686390049F7F4 /* progress_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = progress_bg.png; path = ../../../../Desktop/slices/progress_bg.png; sourceTree = "<group>"; };
+		18F1ED64164686390049F7F4 /* progress_track.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = progress_track.png; path = ../../../../Desktop/slices/progress_track.png; sourceTree = "<group>"; };
+		18F1ED65164686390049F7F4 /* toolbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toolbar.png; path = ../../../../Desktop/slices/toolbar.png; sourceTree = "<group>"; };
+		18F1ED69164690D10049F7F4 /* drag_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = drag_icon.png; path = ../../../../Desktop/slices/drag_icon.png; sourceTree = "<group>"; };
+		18F1ED6B164698FA0049F7F4 /* MMDetailedMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDetailedMovieViewController.h; sourceTree = "<group>"; };
+		18F1ED6C164698FA0049F7F4 /* MMDetailedMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDetailedMovieViewController.m; sourceTree = "<group>"; };
+		18F1ED711646ABE20049F7F4 /* background_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background_image.png; path = ../../../Desktop/slices/background_image.png; sourceTree = "<group>"; };
+		18F1ED731646AD210049F7F4 /* app_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon.png; sourceTree = "<group>"; };
+		18F1ED751646AD990049F7F4 /* app_icon_legacy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon_legacy.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +189,10 @@
 		1841946516435C13008A6D35 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				18F1ED69164690D10049F7F4 /* drag_icon.png */,
+				18F1ED63164686390049F7F4 /* progress_bg.png */,
+				18F1ED64164686390049F7F4 /* progress_track.png */,
+				18F1ED65164686390049F7F4 /* toolbar.png */,
 				1841946316435C0B008A6D35 /* background.jpg */,
 			);
 			name = Resources;
@@ -183,8 +201,8 @@
 		1841946F164363F2008A6D35 /* MovieInfo */ = {
 			isa = PBXGroup;
 			children = (
-				1841947016436475008A6D35 /* MMUIToolbarMovie.h */,
-				1841947116436475008A6D35 /* MMUIToolbarMovie.m */,
+				18F1ED6B164698FA0049F7F4 /* MMDetailedMovieViewController.h */,
+				18F1ED6C164698FA0049F7F4 /* MMDetailedMovieViewController.m */,
 			);
 			name = MovieInfo;
 			sourceTree = "<group>";
@@ -192,6 +210,9 @@
 		1853F3B8163B55B00012C00E = {
 			isa = PBXGroup;
 			children = (
+				18F1ED751646AD990049F7F4 /* app_icon_legacy.png */,
+				18F1ED731646AD210049F7F4 /* app_icon.png */,
+				18F1ED711646ABE20049F7F4 /* background_image.png */,
 				1803DFED1640CE86007FA456 /* Libs */,
 				1853F3ED163B6D690012C00E /* RottenTomatoesAPI */,
 				1853F3CD163B55B00012C00E /* MovieMatch */,
@@ -325,6 +346,13 @@
 				18C6AADB164225EF0077F70D /* placeholder.png in Resources */,
 				1841946416435C0B008A6D35 /* background.jpg in Resources */,
 				1841946B16435F46008A6D35 /* MainStoryboard.storyboard in Resources */,
+				18F1ED66164686390049F7F4 /* progress_bg.png in Resources */,
+				18F1ED67164686390049F7F4 /* progress_track.png in Resources */,
+				18F1ED68164686390049F7F4 /* toolbar.png in Resources */,
+				18F1ED6A164690D10049F7F4 /* drag_icon.png in Resources */,
+				18F1ED721646ABE20049F7F4 /* background_image.png in Resources */,
+				18F1ED741646AD210049F7F4 /* app_icon.png in Resources */,
+				18F1ED761646AD990049F7F4 /* app_icon_legacy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +377,7 @@
 				1803DFEB1640CE81007FA456 /* UIImage+FX.m in Sources */,
 				1803DFEC1640CE81007FA456 /* ReflectionView.m in Sources */,
 				18C6AAD316421F2D0077F70D /* MMViewController.m in Sources */,
-				1841947216436475008A6D35 /* MMUIToolbarMovie.m in Sources */,
+				18F1ED6D164698FA0049F7F4 /* MMDetailedMovieViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

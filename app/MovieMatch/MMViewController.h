@@ -10,8 +10,16 @@
 #import "iCarousel.h"
 
 @interface MMViewController : UIViewController <iCarouselDataSource, iCarouselDelegate>
+
+@property (nonatomic) BOOL isDetailed;
+
 @property (nonatomic) IBOutlet iCarousel *carousel;
-@property (nonatomic) IBOutlet UILabel *titleLabel;
-@property (nonatomic) IBOutlet UILabel *ratingLabel;
+@property (nonatomic) IBOutlet UILabel *movieTitleLabel;
+@property (nonatomic) IBOutlet UILabel *movieScoreLabel;
 @property (nonatomic) IBOutlet UIProgressView *percentBar;
+@property (strong, nonatomic) IBOutlet UIToolbar *toolbarInfo;
+@property (strong, nonatomic) IBOutlet UIButton *dragButton;
+- (IBAction)prepareSegue:(id)sender;
+
+- (IBAction)showInfo:(id)sender;
 @end

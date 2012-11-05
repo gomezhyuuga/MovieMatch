@@ -17,7 +17,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JX9-R0-Fha" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="882" y="-238"/>
+            <point key="canvasLocation" x="653" y="-238"/>
         </scene>
         <!--Carousel Controller-->
         <scene sceneID="6yH-kB-adA">
@@ -27,7 +27,7 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Vat-cT-NUP"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="background_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vat-cT-NUP"/>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yHm-KQ-L3j" userLabel="iCarousel" customClass="iCarousel">
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <connections>
@@ -35,87 +35,182 @@
                                     <outlet property="delegate" destination="fKj-yQ-bIE" id="C4N-e8-pfl"/>
                                 </connections>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HOc-NM-XwU">
-                                <subviews>
-                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1vD-Dn-Px5" customClass="MMUIToolbarMovie">
-                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                        <items/>
-                                    </toolbar>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Movie title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufv-6y-hIO">
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="217" id="9Wp-td-okI"/>
-                                            <constraint firstAttribute="height" constant="21" id="TEj-EX-M2Z"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
-                                        <color key="textColor" red="0.29278399075776729" green="0.4087611607142857" blue="0.25997983384173584" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                        <color key="shadowColor" white="1" alpha="0.35000000000000003" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                        <size key="shadowOffset" width="0.0" height="1"/>
-                                    </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="100%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssC-2e-cep">
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="24" id="0Zp-rd-kRT"/>
-                                            <constraint firstAttribute="width" constant="56" id="xgz-jW-i1g"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
-                                        <color key="textColor" red="0.1627926633918213" green="0.22931281887755106" blue="0.14690931838587859" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                        <color key="shadowColor" white="1" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                        <size key="shadowOffset" width="0.0" height="1"/>
-                                    </label>
-                                    <progressView opaque="NO" contentMode="scaleToFill" progressViewStyle="bar" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="OkY-co-jy1">
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="122" id="OdQ-2f-d2f"/>
-                                        </constraints>
-                                    </progressView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LML-Bc-Y4N" userLabel="Info Toolbar">
+                                <items/>
+                            </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKu-H4-CTI" userLabel="Drag Button">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="drag_icon.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="prepareSegue:" destination="fKj-yQ-bIE" eventType="touchDragOutside" id="O5U-67-Uqj"/>
+                                    <segue destination="LRw-yi-djp" kind="modal" identifier="detailMovie" modalTransitionStyle="coverVertical" id="UHf-Mb-GZW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Movie title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHH-pk-IXC" userLabel="Movie Title">
                                 <constraints>
-                                    <constraint firstItem="OkY-co-jy1" firstAttribute="centerY" secondItem="ssC-2e-cep" secondAttribute="centerY" type="default" id="1nz-9p-CZC"/>
-                                    <constraint firstItem="1vD-Dn-Px5" firstAttribute="trailing" secondItem="HOc-NM-XwU" secondAttribute="trailing" type="default" id="3ww-r6-b7U"/>
-                                    <constraint firstItem="OkY-co-jy1" firstAttribute="leading" secondItem="HOc-NM-XwU" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Sti-gw-VVi"/>
-                                    <constraint firstItem="1vD-Dn-Px5" firstAttribute="top" secondItem="HOc-NM-XwU" secondAttribute="top" type="default" id="bfW-6I-fI3"/>
-                                    <constraint firstItem="1vD-Dn-Px5" firstAttribute="leading" secondItem="HOc-NM-XwU" secondAttribute="leading" type="default" id="dth-FC-Ar3"/>
-                                    <constraint firstItem="ufv-6y-hIO" firstAttribute="leading" secondItem="HOc-NM-XwU" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="fno-ZP-2ZQ"/>
-                                    <constraint firstItem="ssC-2e-cep" firstAttribute="leading" secondItem="OkY-co-jy1" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="lWL-Ec-SkR"/>
-                                    <constraint firstItem="ufv-6y-hIO" firstAttribute="top" secondItem="HOc-NM-XwU" secondAttribute="top" constant="14" id="oN0-ge-Kjp"/>
-                                    <constraint firstItem="ssC-2e-cep" firstAttribute="top" secondItem="1vD-Dn-Px5" secondAttribute="bottom" type="default" id="vVU-H9-UX0"/>
+                                    <constraint firstAttribute="width" constant="235" id="D6t-j2-lx9"/>
+                                    <constraint firstAttribute="height" constant="21" id="Hs5-Jd-c8K"/>
                                 </constraints>
-                            </view>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" white="0.20246920620437955" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="100%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQg-ZP-GKD" userLabel="Score Label">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="cxs-8g-POq"/>
+                                    <constraint firstAttribute="width" constant="42" id="hEH-5U-N3J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="0.2024692062" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="0.59999999999999998" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mNe-Cp-Sqt" userLabel="Score Bar">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Wbr-Ox-tNV"/>
+                                </constraints>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Vat-cT-NUP" firstAttribute="trailing" secondItem="Zdm-fn-X1d" secondAttribute="trailing" type="default" id="2dA-T8-ein"/>
+                            <constraint firstAttribute="trailing" secondItem="tQg-ZP-GKD" secondAttribute="trailing" constant="104" id="0fQ-XB-J5H"/>
+                            <constraint firstItem="LML-Bc-Y4N" firstAttribute="leading" secondItem="Zdm-fn-X1d" secondAttribute="leading" type="default" id="3Ow-1R-JYf"/>
+                            <constraint firstItem="AHH-pk-IXC" firstAttribute="leading" secondItem="Zdm-fn-X1d" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="5c2-aJ-Rkc"/>
                             <constraint firstItem="yHm-KQ-L3j" firstAttribute="top" secondItem="Zdm-fn-X1d" secondAttribute="top" type="default" id="7gc-O0-XRA"/>
                             <constraint firstItem="yHm-KQ-L3j" firstAttribute="trailing" secondItem="Zdm-fn-X1d" secondAttribute="trailing" type="default" id="E7O-YQ-T5k"/>
+                            <constraint firstAttribute="bottom" secondItem="tQg-ZP-GKD" secondAttribute="bottom" constant="7" id="TjV-aF-37Z"/>
+                            <constraint firstItem="sKu-H4-CTI" firstAttribute="leading" secondItem="AHH-pk-IXC" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="UBp-Oo-WBh"/>
                             <constraint firstItem="Vat-cT-NUP" firstAttribute="top" secondItem="Zdm-fn-X1d" secondAttribute="top" type="default" id="Uvs-zh-tv6"/>
                             <constraint firstItem="Vat-cT-NUP" firstAttribute="bottom" secondItem="Zdm-fn-X1d" secondAttribute="bottom" type="default" id="VLD-x8-QPs"/>
-                            <constraint firstAttribute="bottom" secondItem="HOc-NM-XwU" secondAttribute="bottom" constant="-386" id="eXi-o1-TJT"/>
-                            <constraint firstItem="HOc-NM-XwU" firstAttribute="trailing" secondItem="Zdm-fn-X1d" secondAttribute="trailing" type="default" id="f26-b4-Ued"/>
+                            <constraint firstAttribute="bottom" secondItem="AHH-pk-IXC" secondAttribute="bottom" constant="26" id="XqA-nO-Srj"/>
+                            <constraint firstItem="LML-Bc-Y4N" firstAttribute="trailing" secondItem="Zdm-fn-X1d" secondAttribute="trailing" type="default" id="ZHW-K5-G0k"/>
+                            <constraint firstAttribute="bottom" secondItem="sKu-H4-CTI" secondAttribute="bottom" constant="6" id="chP-NN-0xH"/>
+                            <constraint firstAttribute="bottom" secondItem="mNe-Cp-Sqt" secondAttribute="bottom" constant="10" id="d8y-q8-cdd"/>
+                            <constraint firstItem="mNe-Cp-Sqt" firstAttribute="leading" secondItem="Zdm-fn-X1d" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="de2-ns-5LE"/>
                             <constraint firstItem="Vat-cT-NUP" firstAttribute="leading" secondItem="Zdm-fn-X1d" secondAttribute="leading" type="default" id="hyD-Ly-SfJ"/>
                             <constraint firstItem="yHm-KQ-L3j" firstAttribute="bottom" secondItem="Zdm-fn-X1d" secondAttribute="bottom" type="default" id="l5W-a0-XY7"/>
-                            <constraint firstItem="HOc-NM-XwU" firstAttribute="leading" secondItem="Zdm-fn-X1d" secondAttribute="leading" type="default" id="xrc-8b-8ek"/>
+                            <constraint firstItem="LML-Bc-Y4N" firstAttribute="bottom" secondItem="Zdm-fn-X1d" secondAttribute="bottom" type="default" id="yfG-MK-TsS"/>
                             <constraint firstItem="yHm-KQ-L3j" firstAttribute="leading" secondItem="Zdm-fn-X1d" secondAttribute="leading" type="default" id="z30-tb-aAJ"/>
-                            <constraint firstItem="HOc-NM-XwU" firstAttribute="top" secondItem="Zdm-fn-X1d" secondAttribute="top" constant="337" id="zfF-BQ-1Rn"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="LeD-2V-bBn"/>
+                    <tabBarItem key="tabBarItem" title="En cartelera" id="LeD-2V-bBn"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="carousel" destination="yHm-KQ-L3j" id="7f5-YW-vBo"/>
-                        <outlet property="percentBar" destination="OkY-co-jy1" id="rmn-po-2yD"/>
-                        <outlet property="ratingLabel" destination="ssC-2e-cep" id="Veu-Go-75N"/>
-                        <outlet property="titleLabel" destination="ufv-6y-hIO" id="um8-N9-Rv7"/>
+                        <outlet property="dragButton" destination="sKu-H4-CTI" id="l9A-U6-aI9"/>
+                        <outlet property="movieScoreLabel" destination="tQg-ZP-GKD" id="WzU-44-VGc"/>
+                        <outlet property="movieTitleLabel" destination="AHH-pk-IXC" id="mEh-YF-p0c"/>
+                        <outlet property="percentBar" destination="mNe-Cp-Sqt" id="XGt-Va-VFB"/>
+                        <outlet property="toolbarInfo" destination="LML-Bc-Y4N" id="BHd-t6-aAF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="59d-G1-XMl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="882" y="-891"/>
+            <point key="canvasLocation" x="653" y="-875"/>
+        </scene>
+        <!--Detailed Movie View Controller-->
+        <scene sceneID="bhd-jn-LU9">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="LRw-yi-djp" customClass="MMDetailedMovieViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jn6-gx-0Pf">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NvR-xR-7Lx">
+                                <items/>
+                            </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REd-zG-FBN">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="drag_icon.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButton:" destination="LRw-yi-djp" eventType="touchUpInside" id="icK-lF-zsV"/>
+                                    <action selector="showInfo:" destination="fKj-yQ-bIE" eventType="touchUpInside" id="rQv-Cf-KuF"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4Ol-yw-zUM" userLabel="Score Bar">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="lHh-g5-qdb"/>
+                                </constraints>
+                            </progressView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Movie title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GtJ-ij-R0T" userLabel="Movie Title">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="NrE-Fl-9IT"/>
+                                    <constraint firstAttribute="width" constant="235" id="tr5-wO-amA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" white="0.2024692062" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="100%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5Y-L0-czA" userLabel="Score Label">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="5O2-IB-Dq7"/>
+                                    <constraint firstAttribute="height" constant="21" id="XD6-ra-nrg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="0.2024692062" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="0.59999999999999998" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLZ-JM-vjJ">
+                                <color key="backgroundColor" white="0.85104927007299269" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.15069000912408759" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YLZ-JM-vjJ" firstAttribute="leading" secondItem="Jn6-gx-0Pf" secondAttribute="leading" constant="14" id="44g-yg-Thn"/>
+                            <constraint firstItem="GtJ-ij-R0T" firstAttribute="top" secondItem="Jn6-gx-0Pf" secondAttribute="top" constant="7" id="4BJ-EI-xcM"/>
+                            <constraint firstItem="NvR-xR-7Lx" firstAttribute="top" secondItem="Jn6-gx-0Pf" secondAttribute="top" constant="10" id="57h-MX-Tfk"/>
+                            <constraint firstItem="B5Y-L0-czA" firstAttribute="top" secondItem="Jn6-gx-0Pf" secondAttribute="top" constant="26" id="5Dt-su-KH6"/>
+                            <constraint firstItem="YLZ-JM-vjJ" firstAttribute="centerX" secondItem="NvR-xR-7Lx" secondAttribute="centerX" type="default" id="5NI-S8-mqn"/>
+                            <constraint firstItem="4Ol-yw-zUM" firstAttribute="centerY" secondItem="B5Y-L0-czA" secondAttribute="centerY" type="default" id="CKK-RY-SuI"/>
+                            <constraint firstItem="REd-zG-FBN" firstAttribute="top" secondItem="Jn6-gx-0Pf" secondAttribute="top" constant="4" id="PHK-yG-LiO"/>
+                            <constraint firstAttribute="bottom" secondItem="YLZ-JM-vjJ" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="Q6W-7f-73C"/>
+                            <constraint firstItem="YLZ-JM-vjJ" firstAttribute="top" secondItem="Jn6-gx-0Pf" secondAttribute="top" constant="71" id="T7F-Ed-UtG"/>
+                            <constraint firstItem="NvR-xR-7Lx" firstAttribute="trailing" secondItem="Jn6-gx-0Pf" secondAttribute="trailing" type="default" id="UBj-r4-nC5"/>
+                            <constraint firstAttribute="trailing" secondItem="B5Y-L0-czA" secondAttribute="trailing" constant="104" id="XBp-fl-GT6"/>
+                            <constraint firstItem="NvR-xR-7Lx" firstAttribute="leading" secondItem="Jn6-gx-0Pf" secondAttribute="leading" type="default" id="ZAT-hr-BSj"/>
+                            <constraint firstItem="REd-zG-FBN" firstAttribute="leading" secondItem="GtJ-ij-R0T" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="jiC-RJ-veD"/>
+                            <constraint firstItem="GtJ-ij-R0T" firstAttribute="leading" secondItem="Jn6-gx-0Pf" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="sqB-sD-Gxg"/>
+                            <constraint firstItem="4Ol-yw-zUM" firstAttribute="leading" secondItem="Jn6-gx-0Pf" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="vIS-UR-UNc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailBG" destination="YLZ-JM-vjJ" id="5Ma-Ko-SQF"/>
+                        <outlet property="movieTitleLabel" destination="GtJ-ij-R0T" id="n62-sf-pco"/>
+                        <outlet property="percentBar" destination="4Ol-yw-zUM" id="MdH-hE-8tx"/>
+                        <outlet property="scoreLabel" destination="B5Y-L0-czA" id="Sr1-gH-CfK"/>
+                        <outlet property="toolbarInfo" destination="NvR-xR-7Lx" id="CX4-Xb-dns"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WMH-R3-Lux" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1026" y="-875"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="QJR-0N-ERn">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="sXz-C2-ETl" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="vtL-bl-sg7">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -128,23 +223,36 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T1I-Fb-zh2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="348" y="-564"/>
+            <point key="canvasLocation" x="119" y="-564"/>
         </scene>
     </scenes>
     <resources>
-        <image name="background.jpg" width="640" height="960"/>
+        <image name="background_image.png" width="320" height="460"/>
+        <image name="drag_icon.png" width="44" height="44"/>
     </resources>
     <classes>
-        <class className="MMUIToolbarMovie" superclassName="UIToolbar">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMUIToolbarMovie.h"/>
+        <class className="MMDetailedMovieViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMDetailedMovieViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="backButton:"/>
+                <relationship kind="outlet" name="detailBG" candidateClass="UIView"/>
+                <relationship kind="outlet" name="movieTitleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="percentBar" candidateClass="UIProgressView"/>
+                <relationship kind="outlet" name="scoreLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="toolbarInfo" candidateClass="UIToolbar"/>
+            </relationships>
         </class>
         <class className="MMViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MMViewController.h"/>
             <relationships>
+                <relationship kind="action" name="prepareSegue:"/>
+                <relationship kind="action" name="showInfo:"/>
                 <relationship kind="outlet" name="carousel" candidateClass="iCarousel"/>
+                <relationship kind="outlet" name="dragButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="movieScoreLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="movieTitleLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="percentBar" candidateClass="UIProgressView"/>
-                <relationship kind="outlet" name="ratingLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="toolbarInfo" candidateClass="UIToolbar"/>
             </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
