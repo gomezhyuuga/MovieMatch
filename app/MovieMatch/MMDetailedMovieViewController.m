@@ -24,7 +24,7 @@
 
 - (void)setupView
 {
-    [_toolbarInfo setBackgroundImage:[[UIImage imageNamed:@"toolbar"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 13, 0, 13) resizingMode:UIImageResizingModeTile] forToolbarPosition:UIToolbarPositionAny barMetrics:UIBarMetricsDefault];
+    [_toolbarInfo setBackgroundImage:[[UIImage imageNamed:@"toolbar"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 14, 0, 14) resizingMode:UIImageResizingModeTile] forToolbarPosition:UIToolbarPositionAny barMetrics:UIBarMetricsDefault];
     [_percentBar setTrackImage:[[UIImage imageNamed:@"progress_track"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 4, 0, 4) resizingMode:UIImageResizingModeTile]];
     [_percentBar setProgressImage:[[UIImage imageNamed:@"progress_bg"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 4, 0, 4) resizingMode:UIImageResizingModeTile]];
     

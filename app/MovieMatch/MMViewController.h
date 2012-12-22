@@ -18,8 +18,4 @@
 @property (nonatomic) IBOutlet UILabel *movieScoreLabel;
 @property (nonatomic) IBOutlet UIProgressView *percentBar;
 @property (strong, nonatomic) IBOutlet UIToolbar *toolbarInfo;
-@property (strong, nonatomic) IBOutlet UIButton *dragButton;
-- (IBAction)prepareSegue:(id)sender;
-
-- (IBAction)showInfo:(id)sender;
 @end

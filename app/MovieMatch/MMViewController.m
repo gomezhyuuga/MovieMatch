@@ -21,7 +21,6 @@
 @synthesize items;
 
 @synthesize toolbarInfo = _toolbarInfo;
-@synthesize dragButton = _dragButton;
 @synthesize movieScoreLabel = _movieScoreLabel;
 @synthesize movieTitleLabel = _movieTitleLabel;
 @synthesize percentBar = _percentBar;
@@ -33,7 +32,7 @@
     //                                                           owner:self
     //                                                         options:nil] objectAtIndex:0];
     //    _infoView = infoReference;
-    [_toolbarInfo setBackgroundImage:[[UIImage imageNamed:@"toolbar"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 13, 0, 13) resizingMode:UIImageResizingModeTile] forToolbarPosition:UIToolbarPositionAny barMetrics:UIBarMetricsDefault];
+    [_toolbarInfo setBackgroundImage:[[UIImage imageNamed:@"toolbar"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 14, 0, 14) resizingMode:UIImageResizingModeTile] forToolbarPosition:UIToolbarPositionAny barMetrics:UIBarMetricsDefault];
     [_percentBar setTrackImage:[[UIImage imageNamed:@"progress_track"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 4, 0, 4) resizingMode:UIImageResizingModeTile]];
     [_percentBar setProgressImage:[[UIImage imageNamed:@"progress_bg"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 4, 0, 4) resizingMode:UIImageResizingModeTile]];
     
@@ -75,8 +74,8 @@
     [self setupView];
     //configure carousel
     carousel.type = iCarouselTypeCylinder;
-    carousel.viewpointOffset=CGSizeMake(0.0f, -200.0f);
-    carousel.contentOffset=CGSizeMake(0.0f, -220.0f);
+    carousel.viewpointOffset=CGSizeMake(0.0f, -280.0f);
+    carousel.contentOffset=CGSizeMake(0.0f, -300.0f);
 //    [self setupInfoView];
 }
 
@@ -108,8 +107,8 @@
     UIButton *button = (UIButton *)view;
     if (view == nil)
     {
-        FXImageView *imageView = [[[FXImageView alloc] initWithFrame:CGRectMake(0, 0, 160.0f, 235.0f)] autorelease];
-        imageView.contentMode = UIViewContentModeScaleAspectFit;
+        FXImageView *imageView = [[[FXImageView alloc] initWithFrame:CGRectMake(0, 0, 160.0f, 250.0f)] autorelease];
+        imageView.contentMode = UIViewContentModeScaleToFill;
         imageView.asynchronous = YES;
         imageView.reflectionScale = 0.20f;
         imageView.reflectionAlpha = 0.25f;
@@ -192,16 +191,12 @@
         case iCarouselOptionFadeRange:
             return 7;
         case iCarouselOptionSpacing:
-            return 1.06;
+            return 1.1;
         default:
             return value;
     }
 }
 - (IBAction)prepareSegue:(id)sender {
     [self performSegueWithIdentifier:@"detailMovie" sender:carousel];
-}
-
-- (IBAction)showInfo:(id)sender {
-    
 }
 @end
