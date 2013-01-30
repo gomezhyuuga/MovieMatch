@@ -10,3 +10,4 @@ The people involved developing and planning this app are:
 
 - Fernando Gómez <gomezhyuuga@me.com> - Developer &amp; Designer
 - Juan Lombana <juanglombana@hotmail.com> - Bussiness &amp; Management
+- Ramiro Bifaretti <ramiro.bifa@gmail.com> - Developer & Resources

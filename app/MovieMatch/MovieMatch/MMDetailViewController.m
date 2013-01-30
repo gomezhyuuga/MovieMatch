@@ -39,6 +39,7 @@
 @property (strong, nonatomic) IBOutlet UIScrollView *actorsScrollView;
 @property (strong, nonatomic) IBOutlet UITableViewCell *movieYearCell;
 @property (strong, nonatomic) IBOutlet UITableViewCell *movieRuntimeCell;
+@property (weak, nonatomic) IBOutlet UIView *containerView;
 @property (strong, nonatomic) IBOutlet UITableViewCell *movieMPAARatingCell;
 
 @property (nonatomic) NSArray *nibViews;
@@ -67,6 +68,7 @@
 - (void)setupView
 {
     Movie *movie = [[Movie alloc] init];
+    self.containerView.layer.cornerRadius = 4;
     movie.title = @"My movie";
     movie.criticsScore = 90;
     movie.audienceScore = 40;

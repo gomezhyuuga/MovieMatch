@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C3006" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
@@ -186,7 +186,7 @@
                                 <color key="shadowColor" red="0.97604482960000005" green="0.97459013660000005" blue="1" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LCn-nx-cxj"/>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LCn-nx-cxj"/>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="9NV-LM-0la">
                                 <connections>
                                     <action selector="pageChanged:" destination="BAg-J7-AdG" eventType="valueChanged" id="cyd-F8-5qO"/>
@@ -207,22 +207,22 @@
                             <constraint firstItem="WXn-gN-Xlc" firstAttribute="leading" secondItem="rkq-KY-YAB" secondAttribute="leading" type="default" id="K9B-Bb-f9C"/>
                             <constraint firstItem="ceS-6r-cZI" firstAttribute="top" secondItem="Ju2-Oq-7EA" secondAttribute="top" type="default" id="QGk-hR-roI"/>
                             <constraint firstItem="4PF-hf-tfA" firstAttribute="leading" secondItem="Ju2-Oq-7EA" secondAttribute="leading" constant="17" id="SOP-Wg-ASt"/>
-                            <constraint firstItem="ceS-6r-cZI" firstAttribute="bottom" secondItem="Ju2-Oq-7EA" secondAttribute="bottom" type="default" id="Tar-zN-Dgg"/>
                             <constraint firstItem="NYx-XW-EbA" firstAttribute="top" secondItem="Ju2-Oq-7EA" secondAttribute="top" constant="10" id="Wkx-qS-TzW"/>
                             <constraint firstItem="ceS-6r-cZI" firstAttribute="leading" secondItem="Ju2-Oq-7EA" secondAttribute="leading" type="default" id="X36-Gf-r7Z"/>
                             <constraint firstItem="rkq-KY-YAB" firstAttribute="top" secondItem="Ju2-Oq-7EA" secondAttribute="top" constant="32" id="co8-4j-Hw5"/>
                             <constraint firstAttribute="trailing" secondItem="mN5-VD-r1a" secondAttribute="trailing" constant="7" id="gAc-1i-vMz"/>
                             <constraint firstAttribute="bottom" secondItem="LCn-nx-cxj" secondAttribute="bottom" constant="29" id="jnO-vv-mkX"/>
+                            <constraint firstItem="9NV-LM-0la" firstAttribute="bottom" secondItem="Ju2-Oq-7EA" secondAttribute="bottom" type="default" id="ldn-o1-jgX"/>
                             <constraint firstItem="NYx-XW-EbA" firstAttribute="leading" secondItem="Ju2-Oq-7EA" secondAttribute="leading" type="default" id="lgF-3K-cGO"/>
                             <constraint firstItem="LCn-nx-cxj" firstAttribute="top" secondItem="Ju2-Oq-7EA" secondAttribute="top" constant="69" id="s7k-bA-6Wh"/>
                             <constraint firstItem="NYx-XW-EbA" firstAttribute="trailing" secondItem="Ju2-Oq-7EA" secondAttribute="trailing" type="default" id="spc-uk-LIK"/>
-                            <constraint firstItem="9NV-LM-0la" firstAttribute="top" secondItem="Ju2-Oq-7EA" secondAttribute="top" constant="427" id="tWc-0C-JsX"/>
                             <constraint firstItem="4PF-hf-tfA" firstAttribute="top" secondItem="mN5-VD-r1a" secondAttribute="top" type="default" id="w77-C1-JiG"/>
                             <constraint firstItem="WXn-gN-Xlc" firstAttribute="trailing" secondItem="rkq-KY-YAB" secondAttribute="trailing" type="default" id="zBd-4L-YDY"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="backButton" destination="mN5-VD-r1a" id="YnA-E7-cgE"/>
+                        <outlet property="containerView" destination="LCn-nx-cxj" id="7RU-HO-Nbx"/>
                         <outlet property="containerViews" destination="LCn-nx-cxj" id="MMb-l3-JsZ"/>
                         <outlet property="movieScoreLabel" destination="rkq-KY-YAB" id="eBU-Rm-Ifb"/>
                         <outlet property="movieTitleLabel" destination="4PF-hf-tfA" id="j9h-Dm-daS"/>
@@ -295,7 +295,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <imageView key="backgroundView" userInteractionEnabled="NO" contentMode="scaleToFill" image="bg_principal.png" id="MzB-nY-ZZE">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="499"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <cells>
@@ -546,7 +546,7 @@
                                         </constraints>
                                         <string key="text">Esta aplicación fue desarrollada por:
 - Fernando Gómez Herrera
-- Ramiro Bifaretti
+- Ramiro Bifaretti Suarez
 - Juan A. González Lombana
 - Juan P. Cuevas</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -637,8 +637,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bg_movie.png" width="320" height="480"/>
-        <image name="bg_principal.png" width="320" height="480"/>
+        <image name="bg_movie.png" width="320" height="548"/>
+        <image name="bg_principal.png" width="320" height="548"/>
         <image name="icon_calendar.png" width="26" height="26"/>
         <image name="icon_drag_down.png" width="44" height="44"/>
         <image name="icon_drag_up.png" width="44" height="44"/>

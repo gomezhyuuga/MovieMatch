@@ -512,7 +512,7 @@
 				184A8B0B1658E8B500FAE477 /* RottenTomatoesAPI.m */,
 			);
 			name = RTAPI;
-			path = ../../RottenTomatoesAPI/RottenTomatoesAPI/API/RTAPI;
+			path = ../RottenTomatoesAPI/RottenTomatoesAPI/API/RTAPI;
 			sourceTree = "<group>";
 		};
 		184A8B221659056A00FAE477 /* DetailView */ = {
