@@ -260,13 +260,17 @@
     UITableViewCell *cell = [[UITableViewCell alloc] initWithFrame:CGRectMake(0, 0, 240, 56)];
     Review *aReview = [self.reviews objectAtIndex:indexPath.row];
     // Texto de la crítica
-    UILabel *labelQuote = [[UILabel alloc] initWithFrame:CGRectMake(38, 2, 193, 41)];
+//    UILabel *labelQuote = [[UILabel alloc] initWithFrame:CGRectMake(38, 2, 193, 41)];
+    UITextView *labelQuote = [[UITextView alloc] initWithFrame:CGRectMake(38, 2, 193, 41)];
     labelQuote.backgroundColor = [UIColor clearColor];
-    labelQuote.numberOfLines = 4;
-    labelQuote.font = [UIFont systemFontOfSize:8.0];
+//    labelQuote.numberOfLines = 4;
+    labelQuote.userInteractionEnabled = YES;
+    labelQuote.editable = NO;
+    labelQuote.font = [UIFont systemFontOfSize:10.0];
+    labelQuote.contentInset = UIEdgeInsetsMake(-4.0, -4.0, 0, 0);
     labelQuote.textColor = [UIColor grayColor];
-    labelQuote.shadowColor = [UIColor whiteColor];
-    labelQuote.shadowOffset = CGSizeMake(0, 1);
+//    labelQuote.shadowColor = [UIColor whiteColor];
+//    labelQuote.shadowOffset = CGSizeMake(0, 1);
     labelQuote.text = aReview.quote;
     // Autor de crítica y fecha
     UILabel *labelAuthor = [[UILabel alloc] initWithFrame:CGRectMake(38, 43, 193, 12)];
