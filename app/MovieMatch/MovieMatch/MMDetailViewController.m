@@ -26,7 +26,9 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 #pragma mark - Movie info elements
 @property (weak, nonatomic) IBOutlet FXImageView *moviePoster;
-@property (weak, nonatomic) IBOutlet UILabel *synopsis;
+//@property (weak, nonatomic) IBOutlet UILabel *synopsis;
+@property (weak, nonatomic) IBOutlet UITextView *synopsis;
+
 @property (weak, nonatomic) IBOutlet UILabel *criticsScoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *audienceScoreLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *criticsLogo;

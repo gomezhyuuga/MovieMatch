@@ -363,7 +363,7 @@
                                     <outlet property="criticsLogo" destination="ace-3L-m2y" id="sUZ-d4-Ko0"/>
                                     <outlet property="criticsScoreLabel" destination="Ive-cA-RPa" id="gYf-6X-PVA"/>
                                     <outlet property="moviePoster" destination="lda-uz-CEO" id="nDm-AT-M0C"/>
-                                    <segue destination="BAg-J7-AdG" kind="modal" identifier="MovieSegue" id="CYH-v8-dxZ"/>
+                                    <segue destination="BAg-J7-AdG" kind="modal" identifier="MovieSegue" modalTransitionStyle="flipHorizontal" id="CYH-v8-dxZ"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -779,6 +779,6 @@ Contacto y sugerencias: gomezhyuuga@me.com</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="bnD-iY-MdJ"/>
+        <segue reference="CYH-v8-dxZ"/>
     </inferredMetricsTieBreakers>
 </document>
