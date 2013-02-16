@@ -170,5 +170,9 @@
                                           otherButtonTitles:nil];
     [alert show];
 }
-
+// Definir qué orientaciones permite
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskAll;
+}
 @end

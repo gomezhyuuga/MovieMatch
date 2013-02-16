@@ -213,7 +213,6 @@
         [[segue destinationViewController] setDetailedMovie:movie];
     }
 }
-
 #pragma mark - Alerts
 - (void)alert
 {
@@ -233,4 +232,10 @@
                                           otherButtonTitles:nil];
     [alert show];
 }
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait;
+}
+
 @end

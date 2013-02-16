@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
         <!--In Theaters View Controller - First-->
@@ -295,7 +295,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <imageView key="backgroundView" userInteractionEnabled="NO" contentMode="scaleToFill" image="bg_principal.png" id="MzB-nY-ZZE">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="499"/>
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <cells>
@@ -540,15 +540,13 @@
                                             <constraint firstAttribute="height" constant="114" id="moe-zq-pRV"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="250" translatesAutoresizingMaskIntoConstraints="NO" id="nB0-Pn-gev">
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="87" id="Kn5-8i-awG"/>
-                                        </constraints>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="250" translatesAutoresizingMaskIntoConstraints="NO" id="nB0-Pn-gev">
                                         <string key="text">Esta aplicación fue desarrollada por:
 - Fernando Gómez Herrera
 - Ramiro Bifaretti Suarez
 - Juan A. González Lombana
-- Juan P. Cuevas</string>
+
+Contacto y sugerencias: gomezhyuuga@me.com</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <nil key="highlightedColor"/>
                                         <color key="shadowColor" red="0.97604482960000005" green="0.97459013660000005" blue="1" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
@@ -589,6 +587,7 @@
                                     <constraint firstItem="baR-u1-AUM" firstAttribute="centerX" secondItem="nB0-Pn-gev" secondAttribute="centerX" type="default" id="itR-ke-ATf"/>
                                     <constraint firstAttribute="trailing" secondItem="nB0-Pn-gev" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="jcj-7X-a2W"/>
                                     <constraint firstItem="2zZ-6i-cD7" firstAttribute="centerX" secondItem="baR-u1-AUM" secondAttribute="centerX" type="default" id="khY-FY-9Um"/>
+                                    <constraint firstItem="RgG-a8-GRu" firstAttribute="top" secondItem="nB0-Pn-gev" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="qlO-tF-Scy"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -616,9 +615,10 @@
         <!--Tab Bar Controller-->
         <scene sceneID="15">
             <objects>
-                <tabBarController id="4" sceneMemberID="viewController">
+                <tabBarController id="4" customClass="MMTabBarController" sceneMemberID="viewController">
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="5">
                         <rect key="frame" x="0.0" y="431" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -647,12 +647,138 @@
         <image name="icon_search.png" width="26" height="26"/>
         <image name="icon_video_normal.png" width="33" height="33"/>
     </resources>
+    <classes>
+        <class className="FXImageView" superclassName="UIImageView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FXImageView.h"/>
+        </class>
+        <class className="MMDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMDetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+                <relationship kind="action" name="pageChanged:"/>
+                <relationship kind="action" name="shareMovie:"/>
+                <relationship kind="action" name="showTrailer:"/>
+                <relationship kind="outlet" name="actorsScrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="audienceLogo" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="audienceScoreLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="backButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="containerView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="containerViews" candidateClass="UIView"/>
+                <relationship kind="outlet" name="criticConsensus" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="criticsLogo" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="criticsScoreLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="movieMPAARatingCell" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="moviePoster" candidateClass="FXImageView"/>
+                <relationship kind="outlet" name="movieRuntimeCell" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="movieScoreLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="movieTitleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="movieYearCell" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
+                <relationship kind="outlet" name="ratingBar" candidateClass="UIProgressView"/>
+                <relationship kind="outlet" name="reviewsTableView" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="synopsis" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="tomatoMeter" candidateClass="MMTomatoMeter"/>
+            </relationships>
+        </class>
+        <class className="MMInTheatersViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMInTheatersViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="carousel" candidateClass="iCarousel"/>
+                <relationship kind="outlet" name="loadingView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="movieScoreLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="movieTitleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ratingBar" candidateClass="UIProgressView"/>
+                <relationship kind="outlet" name="toolbar" candidateClass="UIToolbar"/>
+            </relationships>
+        </class>
+        <class className="MMInfoViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMInfoViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="bgView" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="MMMovieCollectionCell" superclassName="UICollectionViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMMovieCollectionCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="audienceLogo" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="audienceScoreLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="criticsLogo" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="criticsScoreLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="moviePoster" candidateClass="FXImageView"/>
+            </relationships>
+        </class>
+        <class className="MMMovieTableCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMMovieTableCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="audienceLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="audienceLogo" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="criticsLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="criticsLogo" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="moviePoster" candidateClass="FXImageView"/>
+                <relationship kind="outlet" name="movieTitleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="yearLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="MMPremieresViewController" superclassName="UICollectionViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMPremieresViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="collectionView" candidateClass="UICollectionView"/>
+                <relationship kind="outlet" name="loadingView" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="MMSearchViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMSearchViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="MMTabBarController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMTabBarController.h"/>
+        </class>
+        <class className="MMTomatoMeter" superclassName="UIProgressView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMTomatoMeter.h"/>
+        </class>
+        <class className="MMTrailerViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMTrailerViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="backButton:" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="MMUIProgressView" superclassName="UIProgressView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMUIProgressView.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
+        </class>
+        <class className="UICollectionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewController.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="iCarousel" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iCarousel.h"/>
+            <relationships>
+                <relationship kind="outlet" name="dataSource"/>
+                <relationship kind="outlet" name="delegate"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="6FB-oV-aNX"/>
+        <segue reference="bnD-iY-MdJ"/>
     </inferredMetricsTieBreakers>
 </document>

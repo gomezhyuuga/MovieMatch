@@ -46,4 +46,10 @@
 - (IBAction)backButton:(UIBarButtonItem *)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+// Definir qué orientaciones permite
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskAll;
+}
 @end
