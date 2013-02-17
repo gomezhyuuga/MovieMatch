@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C3012" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -540,18 +540,6 @@
                                             <constraint firstAttribute="height" constant="114" id="moe-zq-pRV"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="250" translatesAutoresizingMaskIntoConstraints="NO" id="nB0-Pn-gev">
-                                        <string key="text">Esta aplicación fue desarrollada por:
-- Fernando Gómez Herrera
-- Ramiro Bifaretti Suarez
-- Juan A. González Lombana
-
-Contacto y sugerencias: gomezhyuuga@me.com</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <nil key="highlightedColor"/>
-                                        <color key="shadowColor" red="0.97604482960000005" green="0.97459013660000005" blue="1" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
-                                        <size key="shadowOffset" width="0.0" height="1"/>
-                                    </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="MovieMatch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baR-u1-AUM">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="ktP-qT-Ql6"/>
@@ -574,20 +562,35 @@ Contacto y sugerencias: gomezhyuuga@me.com</string>
                                         <color key="shadowColor" red="0.97604482960000005" green="0.97459013660000005" blue="1" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
                                         <size key="shadowOffset" width="0.0" height="1"/>
                                     </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dsv-ek-qDs">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="116" id="8eh-JD-oTO"/>
+                                        </constraints>
+                                        <string key="text">Esta aplicación fue desarrollada por:
+- Fernando Gómez Herrera
+- Ramiro Bifaretti Suarez
+- Juan A. González Lombana
+Contacto y sugerencias:
+appware.apps@gmail.com</string>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" link="YES" address="YES"/>
+                                    </textView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.85104927009999998" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="nB0-Pn-gev" firstAttribute="top" secondItem="baR-u1-AUM" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="CIu-gW-utM"/>
-                                    <constraint firstItem="baR-u1-AUM" firstAttribute="top" secondItem="2zZ-6i-cD7" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Ebs-ok-AeR"/>
-                                    <constraint firstItem="nB0-Pn-gev" firstAttribute="leading" secondItem="Q6f-57-wcA" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Q7w-Xg-Luy"/>
-                                    <constraint firstAttribute="bottom" secondItem="RgG-a8-GRu" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="QaS-ZI-Bzh"/>
-                                    <constraint firstItem="2zZ-6i-cD7" firstAttribute="top" secondItem="Q6f-57-wcA" secondAttribute="top" constant="20" symbolic="YES" type="default" id="XZz-ld-Q7b"/>
+                                    <constraint firstItem="Dsv-ek-qDs" firstAttribute="top" secondItem="baR-u1-AUM" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="1el-tT-qPe"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dsv-ek-qDs" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="841-C0-PV1"/>
+                                    <constraint firstItem="Dsv-ek-qDs" firstAttribute="leading" secondItem="Q6f-57-wcA" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="KI8-lL-m7V"/>
+                                    <constraint firstItem="baR-u1-AUM" firstAttribute="top" secondItem="2zZ-6i-cD7" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="SNO-uy-zxF"/>
                                     <constraint firstItem="RgG-a8-GRu" firstAttribute="leading" secondItem="Q6f-57-wcA" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Yvt-mO-evh"/>
                                     <constraint firstAttribute="trailing" secondItem="RgG-a8-GRu" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Zu0-PV-lZb"/>
-                                    <constraint firstItem="baR-u1-AUM" firstAttribute="centerX" secondItem="nB0-Pn-gev" secondAttribute="centerX" type="default" id="itR-ke-ATf"/>
-                                    <constraint firstAttribute="trailing" secondItem="nB0-Pn-gev" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="jcj-7X-a2W"/>
                                     <constraint firstItem="2zZ-6i-cD7" firstAttribute="centerX" secondItem="baR-u1-AUM" secondAttribute="centerX" type="default" id="khY-FY-9Um"/>
-                                    <constraint firstItem="RgG-a8-GRu" firstAttribute="top" secondItem="nB0-Pn-gev" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="qlO-tF-Scy"/>
+                                    <constraint firstAttribute="bottom" secondItem="RgG-a8-GRu" secondAttribute="bottom" constant="5" id="m2G-b9-toh"/>
+                                    <constraint firstItem="Dsv-ek-qDs" firstAttribute="centerX" secondItem="baR-u1-AUM" secondAttribute="centerX" type="default" id="pzX-nJ-WMV"/>
+                                    <constraint firstItem="2zZ-6i-cD7" firstAttribute="top" secondItem="Q6f-57-wcA" secondAttribute="top" constant="14" id="qRT-zb-st9"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -597,9 +600,9 @@ Contacto y sugerencias: gomezhyuuga@me.com</string>
                             <constraint firstItem="nbN-zf-lBl" firstAttribute="centerX" secondItem="Q6f-57-wcA" secondAttribute="centerX" type="default" id="Qxt-Xj-Pb9"/>
                             <constraint firstItem="nbN-zf-lBl" firstAttribute="top" secondItem="17" secondAttribute="top" type="default" id="RMa-gf-Sb6"/>
                             <constraint firstItem="nbN-zf-lBl" firstAttribute="leading" secondItem="17" secondAttribute="leading" type="default" id="TPg-y1-dnl"/>
-                            <constraint firstAttribute="bottom" secondItem="Q6f-57-wcA" secondAttribute="bottom" constant="17" id="ZLk-x1-Ofb"/>
                             <constraint firstItem="Q6f-57-wcA" firstAttribute="top" secondItem="17" secondAttribute="top" constant="18" id="gaS-GG-tQF"/>
                             <constraint firstItem="nbN-zf-lBl" firstAttribute="bottom" secondItem="17" secondAttribute="bottom" type="default" id="hbx-bI-l32"/>
+                            <constraint firstAttribute="bottom" secondItem="Q6f-57-wcA" secondAttribute="bottom" constant="45" id="sst-gh-b1k"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Acerca de" image="icon_info.png" id="6"/>
@@ -647,12 +650,138 @@ Contacto y sugerencias: gomezhyuuga@me.com</string>
         <image name="icon_search.png" width="26" height="26"/>
         <image name="icon_video_normal.png" width="33" height="33"/>
     </resources>
+    <classes>
+        <class className="FXImageView" superclassName="UIImageView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FXImageView.h"/>
+        </class>
+        <class className="MMDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMDetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+                <relationship kind="action" name="pageChanged:"/>
+                <relationship kind="action" name="shareMovie:"/>
+                <relationship kind="action" name="showTrailer:"/>
+                <relationship kind="outlet" name="actorsScrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="audienceLogo" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="audienceScoreLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="backButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="containerView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="containerViews" candidateClass="UIView"/>
+                <relationship kind="outlet" name="criticConsensus" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="criticsLogo" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="criticsScoreLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="movieMPAARatingCell" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="moviePoster" candidateClass="FXImageView"/>
+                <relationship kind="outlet" name="movieRuntimeCell" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="movieScoreLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="movieTitleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="movieYearCell" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
+                <relationship kind="outlet" name="ratingBar" candidateClass="UIProgressView"/>
+                <relationship kind="outlet" name="reviewsTableView" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="synopsis" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="tomatoMeter" candidateClass="MMTomatoMeter"/>
+            </relationships>
+        </class>
+        <class className="MMInTheatersViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMInTheatersViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="carousel" candidateClass="iCarousel"/>
+                <relationship kind="outlet" name="loadingView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="movieScoreLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="movieTitleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ratingBar" candidateClass="UIProgressView"/>
+                <relationship kind="outlet" name="toolbar" candidateClass="UIToolbar"/>
+            </relationships>
+        </class>
+        <class className="MMInfoViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMInfoViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="bgView" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="MMMovieCollectionCell" superclassName="UICollectionViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMMovieCollectionCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="audienceLogo" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="audienceScoreLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="criticsLogo" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="criticsScoreLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="moviePoster" candidateClass="FXImageView"/>
+            </relationships>
+        </class>
+        <class className="MMMovieTableCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMMovieTableCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="audienceLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="audienceLogo" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="criticsLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="criticsLogo" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="moviePoster" candidateClass="FXImageView"/>
+                <relationship kind="outlet" name="movieTitleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="yearLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="MMPremieresViewController" superclassName="UICollectionViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMPremieresViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="collectionView" candidateClass="UICollectionView"/>
+                <relationship kind="outlet" name="loadingView" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="MMSearchViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMSearchViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="MMTabBarController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMTabBarController.h"/>
+        </class>
+        <class className="MMTomatoMeter" superclassName="UIProgressView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMTomatoMeter.h"/>
+        </class>
+        <class className="MMTrailerViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMTrailerViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="backButton:" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="MMUIProgressView" superclassName="UIProgressView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MMUIProgressView.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
+        </class>
+        <class className="UICollectionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewController.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="iCarousel" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iCarousel.h"/>
+            <relationships>
+                <relationship kind="outlet" name="dataSource"/>
+                <relationship kind="outlet" name="delegate"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="CYH-v8-dxZ"/>
+        <segue reference="ZeB-Xy-bLh"/>
     </inferredMetricsTieBreakers>
 </document>

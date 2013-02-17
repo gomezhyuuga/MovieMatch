@@ -81,7 +81,7 @@
     //create new view if no view is available for recycling
     if (view == nil)
     {
-        FXImageView *imageView = [[[FXImageView alloc] initWithFrame:CGRectMake(0, 0, 160.0f, 250.0f)] autorelease];
+        FXImageView *imageView = [[FXImageView alloc] initWithFrame:CGRectMake(0, 0, 160.0f, 250.0f)];
         imageView.contentMode = UIViewContentModeScaleToFill;
         imageView.asynchronous = YES;
         imageView.reflectionScale = 0.20f;
