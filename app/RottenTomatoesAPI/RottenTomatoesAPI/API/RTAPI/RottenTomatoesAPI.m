@@ -12,7 +12,7 @@ static NSString *kAPIKey = @"5pdfzk2rtxmvfhhwzu7adrrc";
 static NSString *kAPIURL = @"http://api.rottentomatoes.com";
 static NSString *kJSONMoviesInTheaters = @"/api/public/v1.0/lists/movies/in_theaters.json?apikey=%@";
 static NSString *kJSONOpeningMovies = @"/api/public/v1.0/lists/movies/opening.json?apikey=%@";
-static NSString *kJSONReviews = @"/api/public/v1.0/movies/770672122/reviews.json?apikey=%@";
+//static NSString *kJSONReviews = @"/api/public/v1.0/movies/770672122/reviews.json?apikey=%@";
 static NSString *kJSONSearch = @"/api/public/v1.0/movies.json?apikey=%@&q=%@";
 static int defaultLimit = 16;
 

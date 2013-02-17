@@ -130,6 +130,7 @@
     // Críticas
     self.criticConsensus.text = [NSString stringWithFormat:@"\"%@\"", self.detailedMovie.criticsConsensus];
     self.reviewsTableView.layer.cornerRadius = 4;
+    self.reviewsTableView.rowHeight = 100;
     // Cargar reviews
     if (self.api == nil) {
         self.api = [[RottenTomatoesAPI alloc] initWithDelegate:self];
@@ -257,23 +258,20 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithFrame:CGRectMake(0, 0, 240, 56)];
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithFrame:CGRectMake(0, 0, 240, 76)];
+    cell.layer.frame = CGRectMake(0, 0, 240, 70);
     Review *aReview = [self.reviews objectAtIndex:indexPath.row];
     // Texto de la crítica
-//    UILabel *labelQuote = [[UILabel alloc] initWithFrame:CGRectMake(38, 2, 193, 41)];
-    UITextView *labelQuote = [[UITextView alloc] initWithFrame:CGRectMake(38, 2, 193, 41)];
+    UILabel *labelQuote = [[UILabel alloc] initWithFrame:CGRectMake(38, 2, 193, 64)];
     labelQuote.backgroundColor = [UIColor clearColor];
-//    labelQuote.numberOfLines = 4;
-    labelQuote.userInteractionEnabled = YES;
-    labelQuote.editable = NO;
+    labelQuote.numberOfLines = 5;
     labelQuote.font = [UIFont systemFontOfSize:10.0];
-    labelQuote.contentInset = UIEdgeInsetsMake(-4.0, -4.0, 0, 0);
     labelQuote.textColor = [UIColor grayColor];
-//    labelQuote.shadowColor = [UIColor whiteColor];
-//    labelQuote.shadowOffset = CGSizeMake(0, 1);
+    labelQuote.shadowColor = [UIColor whiteColor];
+    labelQuote.shadowOffset = CGSizeMake(0, 1);
     labelQuote.text = aReview.quote;
     // Autor de crítica y fecha
-    UILabel *labelAuthor = [[UILabel alloc] initWithFrame:CGRectMake(38, 43, 193, 12)];
+    UILabel *labelAuthor = [[UILabel alloc] initWithFrame:CGRectMake(38, 63, 193, 12)];
     labelAuthor.backgroundColor = [UIColor clearColor];
     labelAuthor.numberOfLines = 1;
     labelAuthor.textAlignment = NSTextAlignmentRight;
@@ -286,7 +284,7 @@
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 16, 20, 20)];
     [imageView setImageForRating:aReview.freshness forCritics:YES];
     // Agregar views
-    cell.backgroundColor = [UIColor clearColor];
+    cell.backgroundColor = [UIColor grayColor];
     [cell addSubview:labelQuote];
     [cell addSubview:labelAuthor];
     [cell addSubview:imageView];
@@ -298,7 +296,7 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    return 56.0f;
+    return 76.0f;
 }
 
 #pragma mark - Social functions

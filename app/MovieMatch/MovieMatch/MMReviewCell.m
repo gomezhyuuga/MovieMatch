@@ -18,7 +18,7 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         // Initialization code
-        self.frame = CGRectMake(0, 0, 240, 56);
+        self.frame = CGRectMake(0, 0, 240, 70);
         self.backgroundColor = [UIColor blackColor];
     }
     return self;
