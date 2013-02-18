@@ -79,9 +79,6 @@
 		187F2462165B638000FD6B1E /* MMSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187F2461165B638000FD6B1E /* MMSearchViewController.m */; };
 		187F246F165B6F8D00FD6B1E /* MMMovieTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187F246E165B6F8D00FD6B1E /* MMMovieTableCell.m */; };
 		18909D7916D07072003E70F1 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18909D7816D07072003E70F1 /* iCarousel.m */; };
-		18909D7B16D0776A003E70F1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 18909D7A16D0776A003E70F1 /* Default.png */; };
-		18909D7D16D07770003E70F1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18909D7C16D07770003E70F1 /* Default@2x.png */; };
-		18909D7F16D07776003E70F1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18909D7E16D07776003E70F1 /* Default-568h@2x.png */; };
 		18AF92CB165B08AD00462696 /* Review.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AF92CA165B08AD00462696 /* Review.m */; };
 		18AF92CF165B0A3B00462696 /* MMReviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AF92CE165B0A3B00462696 /* MMReviewCell.m */; };
 		18E8A1D816D031CD005AB4AD /* MMTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E8A1D716D031CC005AB4AD /* MMTabBarController.m */; };
@@ -690,9 +687,6 @@
 				18344FA01659AFA100A33959 /* MovieInfoView.xib in Resources */,
 				180EF043165AC4D700D03C0F /* icon_search.png in Resources */,
 				180EF046165AC5D000D03C0F /* icon_calendar.png in Resources */,
-				18909D7B16D0776A003E70F1 /* Default.png in Resources */,
-				18909D7D16D07770003E70F1 /* Default@2x.png in Resources */,
-				18909D7F16D07776003E70F1 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
